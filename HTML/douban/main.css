@@ -1,0 +1,283 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 13px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: #259;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+form {
+    margin: 0;
+}
+
+input,
+button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: 0;
+    padding: 5px 10px;
+}
+
+.row:before,
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col-3 {
+    float: left;
+    width: 12.5%;
+}
+
+.col-5 {
+    float: left;
+    width: 20.833333333%;
+}
+
+.col-6 {
+    float: left;
+    width: 25%;
+}
+
+.col-8 {
+    float: left;
+    width: 33.333333333%;
+}
+
+.col-9 {
+    float: left;
+    width: 37.5%;
+}
+
+.col-12 {
+    float: left;
+    width: 50%;
+}
+
+.col-15 {
+    float: left;
+    width: 62.5%;
+}
+
+.col-16 {
+    float: left;
+    width: 66.666666667%;
+}
+
+.col-19 {
+    float: left;
+    width: 79.166666667%;
+}
+
+.col-21 {
+    float: left;
+    width: 87.5%;
+}
+
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.nav-global {
+    background-color: #545652;
+    padding: 0 5px;
+}
+
+.nav-global a {
+    color: #d5d5d5;
+    font-size: 12px;
+    padding: 0.5em 0.8em;
+    display: inline-block;
+}
+
+.nav-global a:hover {
+    color: #fff;
+}
+
+.login {
+    text-align: right;
+}
+
+.nav-page {
+    background-color: #f0f6f3;
+    padding: 5px;
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+    padding: 10px 0;
+    margin: 10px 20px 5px 0;
+}
+
+.nav-link {
+    padding-top:23px;
+}
+
+.nav-link a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    color: #037b82;
+}
+
+.nav-link a:hover {
+    color: #fff;
+    background-color: #037b82;
+}
+
+.search-bar {
+    float: right;
+    position: relative;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+
+.container h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #494949;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.single-article {
+    margin-bottom: 20px;
+}
+
+.single-article>* {
+    padding: 5px 0;
+}
+
+.single-article .col-19 {
+    margin-left: -70px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.single-article .like {
+    background-color: #fae9da;
+    font-size: 13px;
+    color: #ca6445;
+    display: inline-block;
+    text-align: center;
+    padding: 6px 10px;
+    margin-top: 5px;
+}
+
+.article-title {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.article-title:hover {
+    color: #fff;
+    background-color: rgb(93, 150, 226);
+}
+
+.article-preview {
+    line-height: 1.62;
+    font-size: 13px;
+    color: #999;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.article-meta {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.article-meta span {
+    padding-right: 25px;
+}
+
+.group .title {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.single-group {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #666;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.group-preview {
+    margin-left: -10px;
+}
+
+.group-name {
+    margin-bottom: 10px;
+    line-height: 1.3;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.group-meta .join {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.group-name a:hover,
+.group-meta .join:hover {
+    color: #fff;
+    background-color: rgb(93, 150, 226);
+}
+
+.footer .container {
+    color: #999;
+    margin-top: 60px;
+    border-top: 1px dashed #ddd;
+}
+
+.footer .container>* {
+    padding: 10px;
+}
+
+.douban-link {
+    text-align: right;
+}
+
+.douban-link a {
+    padding: 0 3px;
+    display: inline-block;
+}
+
+.douban-link a:hover {
+    color: #fff;
+    background-color: rgb(93, 150, 226);
+}
