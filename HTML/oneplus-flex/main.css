@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-1 {
+    flex-basis: 4.166666667%;
+}
+
+.col-2 {
+    flex-basis: 8.333333333%;
+}
+
+.col-3 {
+    flex-basis: 12.5%;
+}
+
+.col-4 {
+    flex-basis: 16.666666667%;
+}
+
+.col-5 {
+    flex-basis: 20.833333333%;
+}
+
+.col-6 {
+    flex-basis: 25%;
+}
+
+.col-7 {
+    flex-basis: 29.166666667%;
+}
+
+.col-8 {
+    flex-basis: 33.333333333%;
+}
+
+.col-9 {
+    flex-basis: 37.5%;
+}
+
+.col-10 {
+    flex-basis: 41.666666667%;
+}
+
+.col-11 {
+    flex-basis: 45.833333333%;
+}
+
+.col-12 {
+    flex-basis: 50%;
+}
+
+.col-13 {
+    flex-basis: 54.166666667%;
+}
+
+.col-14 {
+    flex-basis: 58.333333333%;
+}
+
+.col-15 {
+    flex-basis: 62.5%;
+}
+
+.col-16 {
+    flex-basis: 66.666666667%;
+}
+
+.col-17 {
+    flex-basis: 70.833333333%;
+}
+
+.col-18 {
+    flex-basis: 75%;
+}
+
+.col-19 {
+    flex-basis: 79.166666667%;
+}
+
+.col-20 {
+    flex-basis: 83.333333333%;
+}
+
+.col-21 {
+    flex-basis: 87.5%;
+}
+
+.col-22 {
+    flex-basis: 91.666666667%;
+}
+
+.col-23 {
+    flex-basis: 95.833333333%;
+}
+
+.col-24 {
+    flex-basis: 100%;
+}
+
+.nav {
+    color: #828282;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav a {
+    color: inherit;
+}
+
+.nav .logo {
+    text-align: left;
+}
+
+.nav .logo a {
+    padding-top: 15px;
+}
+
+.nav .link-group a {
+    padding: 20px 30px;
+}
+
+.nav .link-group a:hover {
+    color: #eb0028;
+    border-bottom: 1px solid #eb0028;
+}
+
+.nav .login a {
+    padding: 20px 10px;
+}
+
+.nav .login a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.nav .login a:last-child:hover {
+    border: none;
+}
+
+.main .section-1 {
+    background-color: #f6f6f6;
+    height: 300px;
+}
+
+.main .section-2 {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.main .promise {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.main .promise>*,
+.footer>* {
+    text-align: center;
+}
+
+.promise .img {
+    background-image: url(https://statics.oneplus.cn/v2/img/common/serviceIcons-sd81bbaa639.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+
+}
+
+.promise .img-1 {
+    background-position: 0 -400px;
+}
+
+.promise .img-2 {
+    background-position: 0 0px;
+}
+
+.promise .img-3 {
+    background-position: 0 -240px;
+}
+
+.promise .img-4 {
+    background-position: 0 -560px;
+}
+
+.promise .text {
+    color: #565b62;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.footer a {
+    display: block;
+}
+
+.footer .oneplus-link {
+    background-color: #fcfcfc;
+    padding: 30px 0;
+    text-align: left;
+}
+
+.oneplus-link .link-group a {
+    color: #828282;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.oneplus-link .link-group a:hover {
+    color: #101920;
+}
+
+.oneplus-link .title {
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #101920;
+    text-align: left;
+}
+
+.oneplus-link .connect {
+    text-align: center;
+}
+
+.oneplus-link .connect .phone {
+    font-size: 20px;
+    color: #101920;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.oneplus-link .connect .btn {
+    font-size: 18px;
+    color: #000;
+    font-weight: lighter;
+    border: 1px solid #565b62;
+    margin: 0 10px;
+}
+
+.oneplus-link .connect .btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.connect p {
+    font-size: 16px;
+    color: #828282;
+}
+
+.metainf {
+    background-color: #f9f9f9;
+}
+
+.metainf .top-box {
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.metainf .language {
+    text-align: left;
+    font-weight: lighter;
+}
+
+.metainf .top-box .link {
+    text-align: right;
+}
+
+.metainf .top-box .link a:last-child {
+    border: none;
+}
+
+.metainf .top-box a {
+    font-size: 12px;
+    color: #828282;
+    display: inline-block;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 10px;
+}
+
+.metainf .meta {
+    padding: 30px 0;
+    text-align: left;
+}
