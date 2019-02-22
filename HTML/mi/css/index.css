@@ -1,0 +1,273 @@
+.logo {
+  background-image: url(https://s01.mifile.cn/i/mi-logo.png);
+  height: 55px;
+  width: 55px;
+  background-color: #ff6700;
+  background-position: center;
+  padding: 0;
+}
+.nav-image {
+  width: 135px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-page .link-group a {
+  display: inline-block;
+  padding: 20px 6px;
+  color: #333;
+  font-size: 16px;
+}
+.nav-page .link-group a:hover {
+  color: #ff6700;
+}
+.nav-page {
+  padding-top: 20px;
+}
+.nav-page input {
+  margin-top: 10px;
+}
+.nav-page .search-bar {
+  position: relative;
+}
+.nav-page .search-holder {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  right: 50px;
+}
+.search-holder .rec {
+  font-weight: lighter;
+  padding: 3px;
+  margin-left: 8px;
+  background-color: #eee;
+}
+.search-holder .rec:hover {
+  color: #fff;
+  background-color: #ff6700;
+}
+.search-input input:focus {
+  border-color: #ff6700;
+}
+.slider {
+  background-image: url(https://i1.mifile.cn/a4/xmad_15411417265473_gXIUK.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+.slider .left-link {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.slider .left-link a {
+  display: block;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+.slider .left-link a:hover {
+  background-color: #ff6700;
+}
+.slider .slider-box {
+  position: relative;
+}
+.slider .flip-page > * {
+  position: absolute;
+  top: 200px;
+  width: 41px;
+  height: 69px;
+  display: inline-block;
+}
+.flip-page .prew-page {
+  left: 0;
+  background-image: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png);
+  background-position: -84px 0px;
+}
+.flip-page .next-page {
+  right: 0;
+  background-image: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png);
+  background-position: -124px 0px;
+}
+.prew-page:hover {
+  background-position: 0px 0px;
+}
+.next-page:hover {
+  background-position: -42px 0px;
+}
+.shortcut {
+  background-color: #5f5750;
+}
+.shortcut > * {
+  padding: 32px 10px;
+  text-align: center;
+}
+.shortcut a {
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.shortcut a:hover {
+  color: #fff;
+}
+.first-screen-card {
+  margin-top: 15px;
+}
+.first-screen-card .col-19 > * {
+  padding-left: 15px;
+}
+.section .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.card-group {
+  margin-top: 20px;
+}
+.section .title .fl {
+  font-size: 22px;
+  font-weight: lighter;
+}
+.section .title .fr {
+  font-size: 16px;
+  color: #000;
+  padding-top: 0.3rem;
+}
+.section .title .fr:hover {
+  color: #ff6700;
+}
+.single-card {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.single-card .img-box {
+  position: relative;
+}
+
+.single-card .img-box .zhekou {
+  background-color: #e53935;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 41%;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.single-card .text {
+  padding: 10px;
+  text-align: center;
+}
+
+.single-card .text .title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.single-card .text .des {
+  font-size: 12px;
+  opacity: 0.5;
+  padding: 5px 0;
+}
+
+.price {
+  padding: 10px 0;
+}
+
+.single-card .text .xianjia {
+  color: #ff6700;
+}
+
+.single-card .text .yuanjia {
+  color: #333;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.short-card {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.section-slogan {
+  margin-top: 20px;
+}
+.long-card .bottom-box {
+  margin-top: 13px;
+}
+.footer .service {
+  text-align: center;
+}
+.footer .service-link a {
+  display: block;
+  font-size: 16px;
+  color: #757575;
+  padding: 30px;
+}
+.footer .service a:hover,
+.footer .metainf a:hover {
+  color: #ff6700;
+}
+.footer .service-link {
+  border-bottom: 1px solid rgba(156, 154, 154, 0.5);
+}
+.footer .link-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.link-box .text {
+  color: #424242;
+  font-size: 14px;
+  padding: 20px 0;
+}
+.link-box .col-20 .col-4 a {
+  display: block;
+  font-size: 12px;
+  color: #757575;
+  padding: 8px 0;
+}
+.link-box .col-20 .col-4 a:hover {
+  color: #ff6700;
+}
+.link-box .col-20 {
+  border-right: 1px solid rgba(156, 154, 154, 0.5);
+}
+.connect p {
+  margin-bottom: 20px;
+}
+.connect .phone {
+  color: #ff6700;
+  font-size: 22px;
+  margin-bottom: -5px;
+}
+.connect .btn {
+  color: #ff6700;
+  border: 1px solid #ff6700;
+  padding: 5px 30px;
+}
+.footer .connect .btn:hover {
+  color: #fff;
+  background-color: #ff6700;
+}
+.metainf .box {
+  padding: 30px 0;
+}
+.metainf .col-3 {
+  background-image: url(https://s01.mifile.cn/i/logo-footer.png?v2);
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+}
+.meta-link div a {
+  color: #757575;
+}
+.meta-link .text {
+  color: #b0b0b0;
+  margin-right: 5px;
+}
+.metainf .link-img .col-6 {
+  padding: 0 5px;
+}

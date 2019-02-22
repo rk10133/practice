@@ -1,0 +1,47 @@
+button,
+input {
+  border: 1px solid rgba(0, 0, 0, .15);
+  padding: 12px 15px;
+  outline: 0;
+  color: #444;
+  background-color: #fff;
+}
+.container {
+    max-width: 1226px;
+}
+.main,
+.footer .metainf {
+    background-color: #f5f5f5;
+}
+/* 全局导航 */
+.header {
+    color: #b0b0b0;
+    background: #333;
+}
+.nav-global a {
+    color: inherit;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 5px;
+}
+.nav-global a:hover {
+    color: #fff;
+}
+.nav-global a.cart {
+    background-color: #444;
+    padding: 0 20px;
+    margin-left: 10px;
+}
+.nav-global a.cart:hover {
+    color: #ff6700;
+    background-color: #fff;
+}
+/* 卡片 */
+.single-card {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+.single-card img {
+    padding-top: 11px;
+}
