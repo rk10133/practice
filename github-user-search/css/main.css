@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(218, 82, 245);
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: rgb(218, 82, 245);
+}
+
+input {
+    font-size: 16px;
+    border: 1px solid rgb(218, 82, 245);
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid rgb(218, 82, 245);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.item {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(218, 82, 245, .2);
+    box-shadow: 0 0 5px rgba(218, 82, 245, .5);
+    font-size: 0;
+    background-color: #fff;
+}
+
+.item>* {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+.item .avatar {
+    width: 12.5%;
+}
+
+.item .text {
+    padding: .5em .5rem .5rem 1rem;
+    width: 87.5%;
+}
+
+.text .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.item a {
+    color: rgba(218, 82, 245, .6);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgb(217, 70, 247);
+}
+
+.footer .active {
+    background: #000;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer button {
+    width: 60px;
+    height: 40px;
+    margin: 0 .2rem;
+}
