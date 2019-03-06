@@ -1,0 +1,74 @@
+<style>
+  .container {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .item {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+</style>
+
+<div class="container">
+  <div class="slider">
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=A" alt="A" />
+    </a>
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=B" alt="B" />
+    </a>
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=C" alt="C" />
+    </a>
+  </div>
+</div>
+
+<script>
+  let parent = document.querySelector(".slider");
+  let slides = parent.querySelectorAll(".item");
+
+  let current = 0;
+  let lastIndex = slides.length - 1;
+
+  boot();
+
+  function boot() {
+    //直接显示第一张，防止空等一秒
+    show(slides[current]);
+    setInterval(() => {
+      flip();
+    }, 2000);
+  }
+
+  function flip() {
+    ++current;
+    if (current >= slides.length) current = 0;
+    let prev = getPrev();
+    let next = slides[current];
+    hide(prev);
+    show(next);
+  }
+
+  function getPrev() {
+    if (current == 0) return slides[lastIndex];
+    else return slides[current - 1];
+  }
+
+  function hide(el) {
+    if (!el) return;
+    el.style.opacity = 0;
+  }
+
+  function show(el) {
+    if (!el) return;
+    el.style.opacity = 1;
+  }
+</script>
