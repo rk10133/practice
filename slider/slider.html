@@ -1,0 +1,101 @@
+<style>
+  .container {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+  }
+
+  .item {
+    position: absolute;
+    display: block;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+</style>
+
+<div class="container">
+  <div class="slider">
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=A" alt="A" />
+    </a>
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=B" alt="B" />
+    </a>
+    <a class="item" href="#">
+      <img src="http://dummyimage.com/520x280?text=C" alt="C" />
+    </a>
+  </div>
+</div>
+
+<script>
+  const parent = document.querySelector(".slider");
+  const slides = parent.querySelectorAll(".item");
+  let current = 0;
+
+  boot();
+
+  function boot() {
+    slideX();
+    slideZ();
+    setInterval(() => {
+      loop();
+      slideX();
+      slideZ();
+    }, 2000);
+  }
+
+  function slideX() {
+    let currentPage = getCurrent();
+    let prevPage = getPrev();
+    let nextPage = getNext();
+    prevPage.style.left = -prevPage.offsetWidth + "px";
+    currentPage.style.left = 0;
+    nextPage.style.left = nextPage.offsetWidth + "px";
+  }
+
+  function slideZ() {
+    let currentPage = getCurrent();
+    let prevPage = getPrev();
+    let nextPage = getNext();
+    prevPage.style.zIndex = 0;
+    prevPage.style.opacity = 0;
+    currentPage.style.zIndex = 1;
+    currentPage.style.opacity = 1;
+    nextPage.style.zIndex = 0;
+    nextPage.style.opacity = 0;
+  }
+
+  function loop() {
+    if (current < slides.length - 1) {
+      return current++;
+    } else {
+      return (current = 0);
+    }
+  }
+
+  function getCurrent() {
+    return slides[current];
+  }
+
+  function getPrev() {
+    if (current == 0) {
+      return slides[slides.length - 1];
+    } else {
+      return slides[current - 1];
+    }
+  }
+
+  function getNext() {
+    if (current == slides.length - 1) {
+      return slides[0];
+    } else {
+      return slides[current + 1];
+    }
+  }
+</script>
