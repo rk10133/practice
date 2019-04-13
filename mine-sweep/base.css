@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: 540px;
+    margin: 0 auto;
+}
+
+.head {
+    height: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.head .start-btn {
+    flex-basis: 30%;
+    padding: 10px 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.head .remain {
+    display: none;
+    flex-basis: 70%;
+    padding: 10px 5px;
+}
+
+.game-board {
+    display: none;
+    height: 540px;
+    width: 540px;
+}
+
+.single-grid {
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-image: url("./img/bg.png");
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.show-result {
+    background-image: url("./img/mine.png");
+}
+
+.single-grid.num {
+    text-align: center;
+    line-height: 53px;
+    background: #fff;
+    border: 1px solid
+}
+
+.single-grid.flag {
+    background-image: url("./img/flag.png");
+}
+
+.mine-square.flag.show-result {
+    background-image: url("./img/markMine.png");
+}
+
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 200px;
+    width: 535px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+.popup .title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 60px
+}
+
+.popup .confirm-btn {
+    font-size: 30px;
+    border: 1px solid;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 0 auto;
+    cursor: pointer;
+}
