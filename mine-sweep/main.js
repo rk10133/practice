@@ -32,15 +32,15 @@ function startGame() {
     gameBoard.oncontextmenu = function () {
         return false;
     };
-    gameBoard.addEventListener('mousedown', e => {
-        let el = e.target;
-        if (e.which == 1) {
-            leftClick(el);
-        }
-        if (e.which == 3) {
-            rightClick(el);
-        }
-    });
+    // gameBoard.addEventListener('mousedown', e => {
+    // let el = e.target;
+    // if (e.which == 1) {
+    //     leftClick(el);
+    // }
+    // if (e.which == 3) {
+    //     rightClick(el);
+    // }
+    // });
 }
 
 
@@ -54,6 +54,15 @@ function initGame() {
             square.classList.add('single-grid');
             square.setAttribute('id', i + '-' + j);
             gameBoard.appendChild(square);
+            square.addEventListener('mousedown', e => {
+                let el = e.target;
+                if (e.which == 1) {
+                    leftClick(el);
+                }
+                if (e.which == 3) {
+                    rightClick(el);
+                }
+            })
             //通过检查isMine的状态防止重复设置雷
             squareStatus.push({
                 isMine: false
@@ -64,8 +73,8 @@ function initGame() {
 
     // 在生成的9x9个格子中随机选则十个设为雷
     while (mineTotalCount) {
-        let squareIndex = Math.round(Math.random() * 81);
-        if (squareStatus[squareIndex].isMine === false) {
+        let squareIndex = Math.floor(Math.random() * 81);
+        if (squareStatus[squareIndex].isMine == false) {
             singleGrid[squareIndex].classList.add('mine-square');
             squareStatus[squareIndex].isMine = true
             mineTotalCount--;
@@ -118,7 +127,6 @@ function leftClick(el) {
 }
 
 function rightClick(el) {
-    console.log(el.classList);
     if (resultTitle.innerText == 'Lose！') return;
     if (el.classList.contains('num')) {
         return
@@ -126,7 +134,7 @@ function rightClick(el) {
     if (!el.classList.contains('flag')) {
         el.classList.add('flag');
         mineMarkCount--;
-    } else {
+    } else if (el.classList.contains('flag')) {
         el.classList.remove('flag');
         mineMarkCount++;
     };
