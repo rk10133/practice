@@ -97,7 +97,12 @@
             gameBoard.style.top = top + 'px';
             if (top == 0) {
                 createRow();
-                gameBoard.style.top = '-150px';
+                let width = document.documentElement.clientWidth
+                if (width >= 770) {
+                    gameBoard.style.top = '-150px';
+                } else {
+                    gameBoard.style.top = '-7.5rem';
+                }
                 if (gameBoard.childNodes.length == 6)
                     gameBoard.removeChild(gameBoard.lastChild);
             }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Don't Touch the White</title>
-    <link rel="stylesheet" href="base.css">
+    <link media="(min-width:770px)" rel="stylesheet" href="./css/desktop.css" />
+    <link media="(max-width:770px)" rel="stylesheet" href="./css/respon.css" />
 </head>
 
 <body>
@@ -16,7 +17,13 @@
         <div class="menu"></div>
     </div>
 
+    <script src="fastClick.js"></script>
     <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+    </script>
 </body>
 
 </html>
