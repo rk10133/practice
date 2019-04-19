@@ -83,9 +83,9 @@ function initGame() {
 }
 
 function leftClick(el) {
+    if (resultTitle.innerText) return;
     let mineSquare = document.querySelectorAll('.mine-square');
     if (el.classList.contains('flag')) return;
-    if (resultTitle.innerText == 'Lose！') return;
     if (el && el.classList.contains("mine-square")) {
         for (let i = 0; i < mineSquare.length; i++) {
             mineSquare[i].classList.add('show-result');
@@ -127,7 +127,7 @@ function leftClick(el) {
 }
 
 function rightClick(el) {
-    if (resultTitle.innerText == 'Lose！') return;
+    if (resultTitle.innerText) return;
     if (el.classList.contains('num')) {
         return
     };
