@@ -13,10 +13,17 @@ const mask = document.querySelector('.mask');
 
 boot();
 
+
+
+
 function boot() {
     startBtn.addEventListener("click", () => {
         startGame();
-    })
+    });
+    //禁止右键菜单事件
+    gameBoard.oncontextmenu = function () {
+        return false;
+    };
 }
 
 
@@ -26,21 +33,7 @@ function startGame() {
     squareStatus = [];
     remain.style.display = "block"
     gameBoard.style.display = "block";
-
     initGame();
-    //在棋盘内阻止右键的默认事件
-    gameBoard.oncontextmenu = function () {
-        return false;
-    };
-    // gameBoard.addEventListener('mousedown', e => {
-    // let el = e.target;
-    // if (e.which == 1) {
-    //     leftClick(el);
-    // }
-    // if (e.which == 3) {
-    //     rightClick(el);
-    // }
-    // });
 }
 
 
@@ -142,8 +135,10 @@ function rightClick(el) {
     //标记出全部雷
     let flagSquare = document.querySelectorAll('.flag');
     let allMineFlag = document.querySelectorAll('.flag.mine-square');
-    //只剩雷
-    if (flagSquare.length == 10 && allMineFlag.length == 10) {
+
+    let allMineRemain = document.querySelectorAll('.num');
+
+    if (flagSquare.length == 10 && allMineFlag.length == 10 && allMineRemain.length == 71) {
         showPopup('win');
     }
 }
