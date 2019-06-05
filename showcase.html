@@ -1,0 +1,164 @@
+<style>
+    body {
+        font-family: tahoma;
+        font-size: 16px;
+        line-height: 1.76;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .item {
+        transform: translate3d(0, 0, 0);
+        position: relative;
+        width: 20%;
+        height: 100vh;
+        min-height: 600px;
+        color: #fff;
+        overflow: hidden;
+        transition: width .5s ease
+    }
+
+    .item::before,
+    .item::after {
+        transform: translate3d(0, 0, 0);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .item::after {
+        background-color: rgba(0, 0, 0, .6);
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+
+    .item:hover::after {
+        opacity: 0;
+    }
+
+    .item:hover {
+        width: 25% !important;
+    }
+
+    .item:hover .text {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all .75s ease .5s;
+    }
+
+    .item:hover .bg-img {
+        filter: grayscale(0);
+    }
+
+    .text {
+        transform: translate3d(0, 0, 0) translateY(25px);
+        position: relative;
+        top: 60%;
+        z-index: 1;
+        text-align: center;
+        margin: 0 1.5em;
+        opacity: 0;
+    }
+
+    .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .title p {
+        font-family: tahoma;
+        font-size: 1.3rem;
+        line-height: 0;
+    }
+
+    .bg-img {
+        transform: translate3d(0, 0, 0);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center center;
+        transition: filter .5s ease;
+        filter: grayscale(100%);
+    }
+</style>
+
+<div class="container">
+    <div class="item">
+        <div class="bg-img"
+            style="background-image:url(https://img.vim-cn.com/64/31da89b6b7df3b0bb4b4ec1760b86ffe407b64.jpg)"></div>
+        <div class="title">
+            <p>IRON MAN</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iusto? Consectetur inventore suscipit
+                delectus maiores accusamus pariatur ducimus, quaerat aliquam voluptatem laudantium ratione impedit
+                tempora quos minima laboriosam labore nisi!</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bg-img"
+            style="background-image: url(https://img.vim-cn.com/9c/41730603261ba8ebfdce980b01a90605cb1fae.jpg)">
+        </div>
+        <div class="title">
+            <p>CAPTAIN AMERICA</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iusto? Consectetur inventore
+                suscipit
+                delectus maiores accusamus pariatur ducimus, quaerat aliquam voluptatem laudantium ratione impedit
+                tempora quos minima laboriosam labore nisi!</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bg-img"
+            style="background-image: url(https://img.vim-cn.com/0c/ed93686808b392ca1766ee214eba4fe04b328f.jpg)"></div>
+        <div class="title">
+            <p>BLACK WIDOW</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iusto? Consectetur inventore suscipit
+                delectus maiores accusamus pariatur ducimus, quaerat aliquam voluptatem laudantium ratione impedit
+                tempora quos minima laboriosam labore nisi!</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bg-img"
+            style="background-image: url(https://img.vim-cn.com/a2/d3bb70c80fe500f790668b2eb40168687baf93.jpg)"></div>
+        <div class="title">
+            <p>HAWKEYE</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iusto? Consectetur inventore suscipit
+                delectus maiores accusamus pariatur ducimus, quaerat aliquam voluptatem laudantium ratione impedit
+                tempora quos minima laboriosam labore nisi!</p>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="bg-img"
+            style="background-image: url(https://img.vim-cn.com/42/9d2c07a9aea1c8b7d9aac4b1841cfd6ea87b3d.jpg)"></div>
+        <div class="title">
+            <p>HULK</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iusto? Consectetur inventore suscipit
+                delectus maiores accusamus pariatur ducimus, quaerat aliquam voluptatem laudantium ratione impedit
+                tempora quos minima laboriosam labore nisi!</p>
+        </div>
+    </div>
+</div>
