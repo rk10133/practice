@@ -1,0 +1,37 @@
+<style>
+    #div {
+        border: 2px solid;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<div id="div">拖拽</div>
+<script>
+    let dragDiv = document.getElementById("div");
+    dragDiv.style.left = "0px";
+    dragDiv.style.top = "0px";
+
+    let mouseX, mouseY, objX, objY;
+    let dragging = false;
+
+    dragDiv.addEventListener('mousedown', e => {
+        dragging = true;
+        dragDiv.style.position = "relative";
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        objX = parseInt(dragDiv.style.left);
+        objY = parseInt(dragDiv.style.top);
+    })
+
+    dragDiv.addEventListener('mousemove', e => {
+        if (dragging) {
+            dragDiv.style.left = parseInt(e.clientX - mouseX + objX) + "px";
+            dragDiv.style.top = parseInt(e.clientY - mouseY + objY) + "px";
+        }
+    })
+
+    document.addEventListener('mouseup', () => {
+        dragging = false;
+    })
+</script>
